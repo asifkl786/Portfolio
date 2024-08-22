@@ -35,7 +35,7 @@ const Navbar = () => {
        <div className='max-w-screen-2xl container mx-auto  px-4 md:px-20 h-16 shadow-md fixed top-0 left-0 right-0 z-50 bg-white'>
             <div className='flex justify-between items-center h-16'>
                     <div className='flex space-x-4'>
-                        <img src={"../../public/asif.jpg "} className='w-12 h-12 rounded-full' alt="" />
+                        <img src={"../../public/asif.png "} className='w-12 h-12 rounded-full' alt="" />
                           <h1 className='font-semibold text-xl cursor-pointer'>Asif <span className='khan text-rose-600 text-xl'>Khan</span>
                             <p className='text-sm'>Software Engineer</p>
                           </h1>
