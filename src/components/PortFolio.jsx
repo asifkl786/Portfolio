@@ -1,11 +1,13 @@
 import React from 'react'
-import java from "../../public/java.png"
 import html from "../../public/html.png"
 import css from "../../public/css.jpg"
 import javascript from "../../public/javascript.png"
 import react from "../../public/reactjs.png"
-import spring from "../../public/spring.png"
-import springBoot from "../../public/springBoot.jpg"
+import quiz from "../../public/quiz.png"
+import movie from "../../public/movie.png"
+import search from "../../public/search.png"
+import dictionary from "../../public/dictionary.png"
+import weather from "../../public/weather.png"
 
 const PortFolio = () => {
     const cardItems = [
@@ -27,23 +29,33 @@ const PortFolio = () => {
          },
          {
             id:4,
-            logo:react,
-            name:"react"
+            logo:weather,
+            name:"Weather App",
+            url:"https://shimmering-puffpuff-365156.netlify.app/"
          },
          {
             id:5,
-            logo:java,
-            name:"java"
+            logo:dictionary,
+            name:"Dictionary App",
+            url:"https://luminous-peony-4d2de5.netlify.app/"
          },
          {
             id:6,
-            logo:spring,
-            name:"spring"
+            logo:quiz,
+            name:"Quiz App",
+            url:"https://imaginative-meringue-2c41c0.netlify.app/"
          },
          {
             id:7,
-            logo:springBoot,
-            name:"springBoot"
+            logo:search,
+            name:"Search Engine",
+            url:"https://moonlit-douhua-b0ceaa.netlify.app/"
+         },
+         {
+            id:8,
+            logo:movie,
+            name:"Movie App",
+            url:"https://bright-medovik-c7cfbe.netlify.app/"
          },
          
     ]
@@ -55,14 +67,17 @@ const PortFolio = () => {
            <h1 className='text-3xl font-bold mb-5'>PortFolio</h1> 
            <span className='underline font-semibold'>Featured Projects</span> 
            <div className='grid grid-cols-1 md:grid-cols-4 gap-6 my-6'>
-                {cardItems.map(({id, logo, name}) =>(
+                {cardItems.map(({id, logo, name, url}) =>(
                     <div key={id} className='md:w-[270px] md:h-[300px] border-[2px] rounded-lg shadow-lg p-1 cursor-pointer hover:scale-110 duration-300 '> 
-                        <img 
-                        src={logo} 
-                        className='w-[120px] h-[120px] p-1 rounded-full border-[2px]'
-                        alt=''/>
+                        
                         <div>
-                            <div className='px-7 font-bold text-xl mb-2'>{name}</div>
+                            <a href={url} target='_blank'>
+                                <img 
+                                    src={logo} 
+                                    className='w-[120px] h-[120px] p-1 rounded-full border-[2px]'
+                                    alt=''/>
+                                <div className='px-7 font-bold text-xl mb-2'>{name}</div>
+                            </a>
                             <p className='px-2 text-gray-700'>Lorem ipsum dolor sit amet consectotoer adipisicing slit</p>
                         </div>
                         <div className='p-4 gap-3 space-x-4'>
