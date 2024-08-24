@@ -1,4 +1,5 @@
 import React from 'react'
+import pic from "../../public/asif.png";
 import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { IoLogoYoutube } from "react-icons/io";
@@ -77,7 +78,11 @@ const Home = () => {
             </div>
 
             <div className='md:w-1/2 md:ml-40 md:mt-20 md:order-1'>
-             <img src="../../public/asif.png" className='rounded-full md:w-[300px] md:h-[300px]' alt="" />
+             <img 
+                src={pic}
+               // src="../../public/asif.png" 
+                className='rounded-full md:w-[300px] md:h-[300px]'
+                alt="" />
             </div>
         </div>
     </div>
