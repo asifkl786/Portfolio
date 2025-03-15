@@ -8,6 +8,7 @@ import movie from "../../public/movie.png"
 import search from "../../public/search.png"
 import dictionary from "../../public/dictionary.png"
 import weather from "../../public/weather.png"
+import toDoApp from "../../public/toDoApp.png"
 
 const PortFolio = () => {
     const cardItems = [
@@ -24,8 +25,9 @@ const PortFolio = () => {
          },
          {
             id:3,
-            logo:javascript,
-            name:"javascript"
+            logo:toDoApp,
+            name:"TO-DO-App",
+            url:"https://to-do-app-using-react-redux.netlify.app/"
          },
          {
             id:4,
